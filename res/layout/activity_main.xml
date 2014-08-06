@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/menu_image" />
+    
+    <Button
+        android:id="@+id/volume_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/custom_button"
+        android:onClick="switchvolume"
+        android:text="@string/music_on"
+        android:typeface="monospace"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/start_string" 
+        android:typeface="monospace"
+        android:onClick="startgame" />
+    <Button
+        android:id="@+id/quit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/custom_button"
+        android:onClick="quit"
+        android:text="@string/quit_string" 
+        android:typeface="monospace" />
+
+</RelativeLayout>
